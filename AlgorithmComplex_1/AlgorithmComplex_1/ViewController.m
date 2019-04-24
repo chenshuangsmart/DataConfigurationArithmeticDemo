@@ -165,4 +165,15 @@
     }
 }
 
+// O(n+k)
+- (void)test8:(int)n k:(int)k {
+    for (int i = 0; i < n; i++) {
+        NSLog(@"test8 %d",i);
+    }
+    
+    for (int i = 0; i < k; i++) {
+        NSLog(@"test8 %d",i);
+    }
+}
+
 @end
