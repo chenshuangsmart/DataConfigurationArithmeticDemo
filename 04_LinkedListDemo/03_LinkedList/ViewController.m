@@ -36,10 +36,19 @@
     NSLog(@"%@",headNode.description);
      */
     
+    /**
     NSLog(@"-------迭代(非递归)反转链表---------");
     // 递归反转链表
     LinkNode *headNode = [self reverseList2:list.first];
     NSLog(@"%@",headNode.description);
+     */
+    
+    // 环形链表
+    LinkNode *lastNode = list.last;
+    lastNode.next = list.first.next;
+//    NSLog(@"%@",list.first.description);  // 不打印,因为一直在循环中
+    bool hasCycle = [self hasCycle:list.first];
+    NSLog(@"是否有环:%d",hasCycle);
 }
 
 // 递归反转链表
@@ -73,6 +82,27 @@
     }
     
     return newHead;
+}
+
+// 环形链表
+- (bool)hasCycle:(LinkNode *)head {
+    if (head == nil || head.next == nil) {
+        return false;
+    }
+    
+    LinkNode *slow = head;
+    LinkNode *fast = head.next;
+    
+    while (fast != nil && fast.next != nil) {
+        slow = slow.next;
+        fast = fast.next.next;
+        
+        if (slow == fast) {
+            return true;
+        }
+    }
+    
+    return fast;
 }
 
 @end

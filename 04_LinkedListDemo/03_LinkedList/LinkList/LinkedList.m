@@ -29,9 +29,11 @@
 - (void)add:(NSUInteger)index element:(id)element {
     if (index == 0) {
         _first = [[LinkNode alloc] initWithElement:element next:_first];
+        _last = _first;
     } else {
         LinkNode *prevNode = [self node:index - 1];
         prevNode.next = [[LinkNode alloc] initWithElement:element next:prevNode.next];
+        _last = prevNode.next;
     }
     self.size++;
 }
