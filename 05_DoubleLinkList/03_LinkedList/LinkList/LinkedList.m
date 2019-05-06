@@ -125,7 +125,7 @@
         return nil;
     }
     
-    if (self.size > 1 && index < self.size) {
+    if (index < self.size * 0.5) {
         LinkNode *node = _first;
         for (int i = 0; i < index; i++) {
             node = node.next;
