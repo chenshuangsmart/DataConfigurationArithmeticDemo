@@ -19,8 +19,10 @@
 		93796CEC22759238004BE220 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 93796CEB22759238004BE220 /* List.m */; };
 		93CB635C22831BF9009BEC87 /* SingleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CB635B22831BF9009BEC87 /* SingleCircleLinkedList.m */; };
 		93CB635F22832ECA009BEC87 /* DoubleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CB635E22832ECA009BEC87 /* DoubleCircleLinkedList.m */; };
-		93DE02C82289C42F00A429A4 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02C72289C42F00A429A4 /* Stack.m */; };
-		93ED26A52287CA570025DD2D /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ED26A42287CA570025DD2D /* ArrayList.m */; };
+		93DE02BC2289AF5700A429A4 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02BB2289AF5700A429A4 /* Queue.m */; };
+		93DE02BF2289C01700A429A4 /* QueueStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02BE2289C01700A429A4 /* QueueStack.m */; };
+		93DE02CB2289C46200A429A4 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02CA2289C46200A429A4 /* Stack.m */; };
+		93DE02CE2289C4A000A429A4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02CD2289C4A000A429A4 /* ArrayList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +48,14 @@
 		93CB635B22831BF9009BEC87 /* SingleCircleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleCircleLinkedList.m; sourceTree = "<group>"; };
 		93CB635D22832ECA009BEC87 /* DoubleCircleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleCircleLinkedList.h; sourceTree = "<group>"; };
 		93CB635E22832ECA009BEC87 /* DoubleCircleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleCircleLinkedList.m; sourceTree = "<group>"; };
-		93DE02C62289C42E00A429A4 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		93DE02C72289C42F00A429A4 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
-		93ED26A32287CA570025DD2D /* ArrayList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayList.h; sourceTree = "<group>"; };
-		93ED26A42287CA570025DD2D /* ArrayList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayList.m; sourceTree = "<group>"; };
+		93DE02BA2289AF5700A429A4 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		93DE02BB2289AF5700A429A4 /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		93DE02BD2289C01700A429A4 /* QueueStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueStack.h; sourceTree = "<group>"; };
+		93DE02BE2289C01700A429A4 /* QueueStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueStack.m; sourceTree = "<group>"; };
+		93DE02C92289C46200A429A4 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		93DE02CA2289C46200A429A4 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		93DE02CC2289C4A000A429A4 /* ArrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayList.h; sourceTree = "<group>"; };
+		93DE02CD2289C4A000A429A4 /* ArrayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +113,18 @@
 				93796CE822759042004BE220 /* AbstractList.m */,
 				93796CE422758959004BE220 /* LinkedList.h */,
 				93796CE522758959004BE220 /* LinkedList.m */,
-				93ED26A32287CA570025DD2D /* ArrayList.h */,
-				93ED26A42287CA570025DD2D /* ArrayList.m */,
 				93CB635A22831BF9009BEC87 /* SingleCircleLinkedList.h */,
 				93CB635B22831BF9009BEC87 /* SingleCircleLinkedList.m */,
 				93CB635D22832ECA009BEC87 /* DoubleCircleLinkedList.h */,
 				93CB635E22832ECA009BEC87 /* DoubleCircleLinkedList.m */,
-				93DE02C62289C42E00A429A4 /* Stack.h */,
-				93DE02C72289C42F00A429A4 /* Stack.m */,
+				93DE02CC2289C4A000A429A4 /* ArrayList.h */,
+				93DE02CD2289C4A000A429A4 /* ArrayList.m */,
+				93DE02C92289C46200A429A4 /* Stack.h */,
+				93DE02CA2289C46200A429A4 /* Stack.m */,
+				93DE02BA2289AF5700A429A4 /* Queue.h */,
+				93DE02BB2289AF5700A429A4 /* Queue.m */,
+				93DE02BD2289C01700A429A4 /* QueueStack.h */,
+				93DE02BE2289C01700A429A4 /* QueueStack.m */,
 			);
 			path = LinkList;
 			sourceTree = "<group>";
@@ -189,17 +199,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DE02CB2289C46200A429A4 /* Stack.m in Sources */,
 				93796CEC22759238004BE220 /* List.m in Sources */,
 				93CB635F22832ECA009BEC87 /* DoubleCircleLinkedList.m in Sources */,
 				93796CCF22758816004BE220 /* ViewController.m in Sources */,
-				93ED26A52287CA570025DD2D /* ArrayList.m in Sources */,
 				93CB635C22831BF9009BEC87 /* SingleCircleLinkedList.m in Sources */,
 				93796CE3227588CD004BE220 /* LinkNode.m in Sources */,
+				93DE02BC2289AF5700A429A4 /* Queue.m in Sources */,
+				93DE02CE2289C4A000A429A4 /* ArrayList.m in Sources */,
 				93796CDA22758817004BE220 /* main.m in Sources */,
 				93796CE622758959004BE220 /* LinkedList.m in Sources */,
 				93796CCC22758816004BE220 /* AppDelegate.m in Sources */,
-				93DE02C82289C42F00A429A4 /* Stack.m in Sources */,
 				93796CE922759042004BE220 /* AbstractList.m in Sources */,
+				93DE02BF2289C01700A429A4 /* QueueStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
