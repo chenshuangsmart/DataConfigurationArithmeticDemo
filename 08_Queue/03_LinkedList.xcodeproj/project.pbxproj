@@ -17,6 +17,9 @@
 		93796CE622758959004BE220 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93796CE522758959004BE220 /* LinkedList.m */; };
 		93796CE922759042004BE220 /* AbstractList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93796CE822759042004BE220 /* AbstractList.m */; };
 		93796CEC22759238004BE220 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 93796CEB22759238004BE220 /* List.m */; };
+		93ADCE31228AF89000C08CF0 /* Deque.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE30228AF89000C08CF0 /* Deque.m */; };
+		93ADCE34228AFFD600C08CF0 /* CircleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE33228AFFD600C08CF0 /* CircleQueue.m */; };
+		93ADCE37228AFFE400C08CF0 /* CircleDeque.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE36228AFFE400C08CF0 /* CircleDeque.m */; };
 		93CB635C22831BF9009BEC87 /* SingleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CB635B22831BF9009BEC87 /* SingleCircleLinkedList.m */; };
 		93CB635F22832ECA009BEC87 /* DoubleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CB635E22832ECA009BEC87 /* DoubleCircleLinkedList.m */; };
 		93DE02BC2289AF5700A429A4 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE02BB2289AF5700A429A4 /* Queue.m */; };
@@ -44,6 +47,12 @@
 		93796CE822759042004BE220 /* AbstractList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractList.m; sourceTree = "<group>"; };
 		93796CEA22759238004BE220 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		93796CEB22759238004BE220 /* List.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		93ADCE2F228AF89000C08CF0 /* Deque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deque.h; sourceTree = "<group>"; };
+		93ADCE30228AF89000C08CF0 /* Deque.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deque.m; sourceTree = "<group>"; };
+		93ADCE32228AFFD600C08CF0 /* CircleQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleQueue.h; sourceTree = "<group>"; };
+		93ADCE33228AFFD600C08CF0 /* CircleQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleQueue.m; sourceTree = "<group>"; };
+		93ADCE35228AFFE400C08CF0 /* CircleDeque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleDeque.h; sourceTree = "<group>"; };
+		93ADCE36228AFFE400C08CF0 /* CircleDeque.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleDeque.m; sourceTree = "<group>"; };
 		93CB635A22831BF9009BEC87 /* SingleCircleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleCircleLinkedList.h; sourceTree = "<group>"; };
 		93CB635B22831BF9009BEC87 /* SingleCircleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleCircleLinkedList.m; sourceTree = "<group>"; };
 		93CB635D22832ECA009BEC87 /* DoubleCircleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleCircleLinkedList.h; sourceTree = "<group>"; };
@@ -125,6 +134,12 @@
 				93DE02BB2289AF5700A429A4 /* Queue.m */,
 				93DE02BD2289C01700A429A4 /* QueueStack.h */,
 				93DE02BE2289C01700A429A4 /* QueueStack.m */,
+				93ADCE2F228AF89000C08CF0 /* Deque.h */,
+				93ADCE30228AF89000C08CF0 /* Deque.m */,
+				93ADCE32228AFFD600C08CF0 /* CircleQueue.h */,
+				93ADCE33228AFFD600C08CF0 /* CircleQueue.m */,
+				93ADCE35228AFFE400C08CF0 /* CircleDeque.h */,
+				93ADCE36228AFFE400C08CF0 /* CircleDeque.m */,
 			);
 			path = LinkList;
 			sourceTree = "<group>";
@@ -207,10 +222,13 @@
 				93796CE3227588CD004BE220 /* LinkNode.m in Sources */,
 				93DE02BC2289AF5700A429A4 /* Queue.m in Sources */,
 				93DE02CE2289C4A000A429A4 /* ArrayList.m in Sources */,
+				93ADCE31228AF89000C08CF0 /* Deque.m in Sources */,
+				93ADCE34228AFFD600C08CF0 /* CircleQueue.m in Sources */,
 				93796CDA22758817004BE220 /* main.m in Sources */,
 				93796CE622758959004BE220 /* LinkedList.m in Sources */,
 				93796CCC22758816004BE220 /* AppDelegate.m in Sources */,
 				93796CE922759042004BE220 /* AbstractList.m in Sources */,
+				93ADCE37228AFFE400C08CF0 /* CircleDeque.m in Sources */,
 				93DE02BF2289C01700A429A4 /* QueueStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
