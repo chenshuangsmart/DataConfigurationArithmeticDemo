@@ -116,6 +116,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否为完全二叉树
 - (BOOL)isComplteBinaryTree;
 
+#pragma mark - 前驱节点 和 后继节点
+
+/// 找前驱节点
+- (TreeNode *)predecessor:(TreeNode *)node;
+
+/// 找后继节点
+- (TreeNode *)successor:(TreeNode *)node;
+
 @end
 
 NS_ASSUME_NONNULL_END

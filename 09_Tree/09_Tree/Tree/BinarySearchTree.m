@@ -359,4 +359,62 @@
     [self toString:node.right strM:strM prefix:[NSMutableString stringWithFormat:@"%@%@",prefix,@"R_"]];
 }
 
+#pragma mark - 前驱节点 和 后继节点
+
+/// 找前驱节点
+- (TreeNode *)predecessor:(TreeNode *)node {
+    if (node == nil) {
+        return nil;
+    }
+    
+    /** 1.左子树不为空
+        前驱节点在左子树当中（left.right.right.right....）
+     */
+    TreeNode *p = node.left;
+    if (p != nil) {
+        while (p.right != nil) {
+            p = p.right;
+        }
+        return p;
+    }
+    
+    /** 2.左子树为空,父节点不为空
+        从父节点、祖父节点中寻找前驱节点
+     */
+    while (node.parent != nil && node == node.parent.left) {
+        node = node.parent;
+    }
+    
+    // node.parent == null
+    // node == node.parent.right
+    return node.parent;
+}
+
+/// 找后继节点
+- (TreeNode *)successor:(TreeNode *)node {
+    if (node == nil) {
+        return nil;
+    }
+    
+    /** 1.右子树不为空
+        前驱节点在左子树当中（node.right.left.left.left....）
+     */
+    TreeNode *p = node.right;
+    if (p != nil) {
+        while (p.left != nil) {
+            p = p.left;
+        }
+        return p;
+    }
+    
+    /** 2.右子树为空,父节点不为空
+        从父节点、祖父节点中寻找前驱节点
+     */
+    while (node.parent != nil && node == node.parent.right) {
+        node = node.parent;
+    }
+    
+    return node.parent;
+}
+
 @end
