@@ -76,7 +76,49 @@
  * @param element
  */
 - (void)remove:(id)element {
+    [self removeNode:[self node:element]];
+}
+
+/// 删除节点 node
+- (void)removeNode:(TreeNode *)node {
+    if (node == nil) {
+        return;
+    }
     
+    self.size--;
+    
+    if (node.hasTwoChildren) {  // 度为2的节点
+        // 找到后继节点
+        TreeNode *s = [self successor:node];
+        // 用后继节点的值覆盖度为2的节点的值
+        node.element = s.element;
+        // 删除后继节点
+        node = s;
+    }
+    
+    // 删除node节点(node的度必然是1或者0)
+    TreeNode *replacement = node.left != nil ? node.left : node.right;
+    
+    if (replacement != nil) {   // 1.node是度为1的节点
+        // 更改parent
+        replacement.parent = node.parent;
+        // 更改parent的left,right的指向
+        if (node.parent == nil) {   // node是度为1的节点并且是根节点
+            self.root = replacement;
+        } else if (node == node.parent.left) {  // 左子节点
+            node.parent.left = replacement;
+        } else {    // node == node.parent.right
+            node.parent.right = replacement;
+        }
+    } else if (node.parent == nil) {    // 2.node是叶子节点并且是根节点
+        self.root = nil;
+    } else {    // 3.node是叶子节点,但不是根节点
+        if (node == node.parent.left) {
+            node.parent.left = nil;
+        } else {    // node == node.parent.right
+            node.parent.right = nil;
+        }
+    }
 }
 
 - (NSString *)description {
