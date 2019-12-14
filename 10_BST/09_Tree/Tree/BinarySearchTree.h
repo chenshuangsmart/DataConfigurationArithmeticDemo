@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- 二叉搜索树
+ 二叉树
  */
 @interface BinarySearchTree : NSObject
 
