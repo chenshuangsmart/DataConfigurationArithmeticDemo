@@ -13,19 +13,19 @@
 		9351F44123CA061F009239C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9351F44023CA061F009239C5 /* Assets.xcassets */; };
 		9351F44423CA061F009239C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9351F44223CA061F009239C5 /* LaunchScreen.storyboard */; };
 		9351F44723CA061F009239C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F44623CA061F009239C5 /* main.m */; };
-		9351F45823CA0640009239C5 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F44E23CA063F009239C5 /* List.m */; };
-		9351F45923CA0640009239C5 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45123CA063F009239C5 /* Queue.m */; };
-		9351F45A23CA0640009239C5 /* AbstractList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45223CA063F009239C5 /* AbstractList.m */; };
-		9351F45B23CA0640009239C5 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45423CA063F009239C5 /* LinkNode.m */; };
-		9351F45C23CA0640009239C5 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45723CA063F009239C5 /* LinkedList.m */; };
-		9351F46823CA0649009239C5 /* BST.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45E23CA0649009239C5 /* BST.m */; };
-		9351F46923CA0649009239C5 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F45F23CA0649009239C5 /* BinarySearchTree.m */; };
-		9351F46A23CA0649009239C5 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F46023CA0649009239C5 /* TreeNode.m */; };
-		9351F46B23CA0649009239C5 /* AVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F46123CA0649009239C5 /* AVLTree.m */; };
-		9351F46C23CA0649009239C5 /* AVLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F46223CA0649009239C5 /* AVLNode.m */; };
-		9351F46F23CA0717009239C5 /* BBST.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F46E23CA0717009239C5 /* BBST.m */; };
-		9351F47223CE0B4A009239C5 /* RBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F47123CE0B4A009239C5 /* RBTree.m */; };
-		9351F47523CE10A6009239C5 /* RBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351F47423CE10A6009239C5 /* RBNode.m */; };
+		93BF2A8B2405666500096672 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A812405666500096672 /* List.m */; };
+		93BF2A8C2405666500096672 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A842405666500096672 /* Queue.m */; };
+		93BF2A8D2405666500096672 /* AbstractList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A852405666500096672 /* AbstractList.m */; };
+		93BF2A8E2405666500096672 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A872405666500096672 /* LinkNode.m */; };
+		93BF2A8F2405666500096672 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A8A2405666500096672 /* LinkedList.m */; };
+		93BF2AA12405667000096672 /* RBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A912405667000096672 /* RBNode.m */; };
+		93BF2AA22405667000096672 /* RBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A922405667000096672 /* RBTree.m */; };
+		93BF2AA32405667000096672 /* BBST.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A932405667000096672 /* BBST.m */; };
+		93BF2AA42405667000096672 /* BST.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A942405667000096672 /* BST.m */; };
+		93BF2AA52405667000096672 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A952405667000096672 /* BinarySearchTree.m */; };
+		93BF2AA62405667000096672 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A962405667000096672 /* TreeNode.m */; };
+		93BF2AA72405667000096672 /* AVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A972405667000096672 /* AVLTree.m */; };
+		93BF2AA82405667000096672 /* AVLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF2A982405667000096672 /* AVLNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,32 +39,32 @@
 		9351F44323CA061F009239C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9351F44523CA061F009239C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9351F44623CA061F009239C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9351F44E23CA063F009239C5 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
-		9351F44F23CA063F009239C5 /* LinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkNode.h; sourceTree = "<group>"; };
-		9351F45023CA063F009239C5 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
-		9351F45123CA063F009239C5 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
-		9351F45223CA063F009239C5 /* AbstractList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractList.m; sourceTree = "<group>"; };
-		9351F45323CA063F009239C5 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		9351F45423CA063F009239C5 /* LinkNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkNode.m; sourceTree = "<group>"; };
-		9351F45523CA063F009239C5 /* AbstractList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractList.h; sourceTree = "<group>"; };
-		9351F45623CA063F009239C5 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
-		9351F45723CA063F009239C5 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
-		9351F45E23CA0649009239C5 /* BST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BST.m; sourceTree = "<group>"; };
-		9351F45F23CA0649009239C5 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
-		9351F46023CA0649009239C5 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
-		9351F46123CA0649009239C5 /* AVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLTree.m; sourceTree = "<group>"; };
-		9351F46223CA0649009239C5 /* AVLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLNode.m; sourceTree = "<group>"; };
-		9351F46323CA0649009239C5 /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
-		9351F46423CA0649009239C5 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
-		9351F46523CA0649009239C5 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
-		9351F46623CA0649009239C5 /* AVLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLNode.h; sourceTree = "<group>"; };
-		9351F46723CA0649009239C5 /* AVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
-		9351F46D23CA0717009239C5 /* BBST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBST.h; sourceTree = "<group>"; };
-		9351F46E23CA0717009239C5 /* BBST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBST.m; sourceTree = "<group>"; };
-		9351F47023CE0B4A009239C5 /* RBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTree.h; sourceTree = "<group>"; };
-		9351F47123CE0B4A009239C5 /* RBTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBTree.m; sourceTree = "<group>"; };
-		9351F47323CE10A6009239C5 /* RBNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBNode.h; sourceTree = "<group>"; };
-		9351F47423CE10A6009239C5 /* RBNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBNode.m; sourceTree = "<group>"; };
+		93BF2A812405666500096672 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		93BF2A822405666500096672 /* LinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkNode.h; sourceTree = "<group>"; };
+		93BF2A832405666500096672 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		93BF2A842405666500096672 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		93BF2A852405666500096672 /* AbstractList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractList.m; sourceTree = "<group>"; };
+		93BF2A862405666500096672 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		93BF2A872405666500096672 /* LinkNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkNode.m; sourceTree = "<group>"; };
+		93BF2A882405666500096672 /* AbstractList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractList.h; sourceTree = "<group>"; };
+		93BF2A892405666500096672 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		93BF2A8A2405666500096672 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		93BF2A912405667000096672 /* RBNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNode.m; sourceTree = "<group>"; };
+		93BF2A922405667000096672 /* RBTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTree.m; sourceTree = "<group>"; };
+		93BF2A932405667000096672 /* BBST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBST.m; sourceTree = "<group>"; };
+		93BF2A942405667000096672 /* BST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BST.m; sourceTree = "<group>"; };
+		93BF2A952405667000096672 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
+		93BF2A962405667000096672 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		93BF2A972405667000096672 /* AVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLTree.m; sourceTree = "<group>"; };
+		93BF2A982405667000096672 /* AVLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLNode.m; sourceTree = "<group>"; };
+		93BF2A992405667000096672 /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
+		93BF2A9A2405667000096672 /* BBST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBST.h; sourceTree = "<group>"; };
+		93BF2A9B2405667000096672 /* RBTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTree.h; sourceTree = "<group>"; };
+		93BF2A9C2405667000096672 /* RBNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNode.h; sourceTree = "<group>"; };
+		93BF2A9D2405667000096672 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		93BF2A9E2405667000096672 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		93BF2A9F2405667000096672 /* AVLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLNode.h; sourceTree = "<group>"; };
+		93BF2AA02405667000096672 /* AVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		9351F43623CA061E009239C5 /* 12_RedBlackTree */ = {
 			isa = PBXGroup;
 			children = (
-				9351F45D23CA0649009239C5 /* Tree */,
-				9351F44D23CA063F009239C5 /* List */,
+				93BF2A902405667000096672 /* Tree */,
+				93BF2A802405666500096672 /* List */,
 				9351F43723CA061E009239C5 /* AppDelegate.h */,
 				9351F43823CA061E009239C5 /* AppDelegate.m */,
 				9351F43A23CA061E009239C5 /* ViewController.h */,
@@ -112,46 +112,44 @@
 			path = 12_RedBlackTree;
 			sourceTree = "<group>";
 		};
-		9351F44D23CA063F009239C5 /* List */ = {
+		93BF2A802405666500096672 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				9351F45323CA063F009239C5 /* List.h */,
-				9351F44E23CA063F009239C5 /* List.m */,
-				9351F44F23CA063F009239C5 /* LinkNode.h */,
-				9351F45423CA063F009239C5 /* LinkNode.m */,
-				9351F45023CA063F009239C5 /* LinkedList.h */,
-				9351F45723CA063F009239C5 /* LinkedList.m */,
-				9351F45623CA063F009239C5 /* Queue.h */,
-				9351F45123CA063F009239C5 /* Queue.m */,
-				9351F45523CA063F009239C5 /* AbstractList.h */,
-				9351F45223CA063F009239C5 /* AbstractList.m */,
+				93BF2A812405666500096672 /* List.m */,
+				93BF2A822405666500096672 /* LinkNode.h */,
+				93BF2A832405666500096672 /* LinkedList.h */,
+				93BF2A842405666500096672 /* Queue.m */,
+				93BF2A852405666500096672 /* AbstractList.m */,
+				93BF2A862405666500096672 /* List.h */,
+				93BF2A872405666500096672 /* LinkNode.m */,
+				93BF2A882405666500096672 /* AbstractList.h */,
+				93BF2A892405666500096672 /* Queue.h */,
+				93BF2A8A2405666500096672 /* LinkedList.m */,
 			);
-			name = List;
-			path = ../../11_AVLTree/List;
+			path = List;
 			sourceTree = "<group>";
 		};
-		9351F45D23CA0649009239C5 /* Tree */ = {
+		93BF2A902405667000096672 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				9351F46423CA0649009239C5 /* TreeNode.h */,
-				9351F46023CA0649009239C5 /* TreeNode.m */,
-				9351F46623CA0649009239C5 /* AVLNode.h */,
-				9351F46223CA0649009239C5 /* AVLNode.m */,
-				9351F47323CE10A6009239C5 /* RBNode.h */,
-				9351F47423CE10A6009239C5 /* RBNode.m */,
-				9351F46523CA0649009239C5 /* BinarySearchTree.h */,
-				9351F45F23CA0649009239C5 /* BinarySearchTree.m */,
-				9351F46323CA0649009239C5 /* BST.h */,
-				9351F45E23CA0649009239C5 /* BST.m */,
-				9351F46D23CA0717009239C5 /* BBST.h */,
-				9351F46E23CA0717009239C5 /* BBST.m */,
-				9351F46723CA0649009239C5 /* AVLTree.h */,
-				9351F46123CA0649009239C5 /* AVLTree.m */,
-				9351F47023CE0B4A009239C5 /* RBTree.h */,
-				9351F47123CE0B4A009239C5 /* RBTree.m */,
+				93BF2A912405667000096672 /* RBNode.m */,
+				93BF2A922405667000096672 /* RBTree.m */,
+				93BF2A932405667000096672 /* BBST.m */,
+				93BF2A942405667000096672 /* BST.m */,
+				93BF2A952405667000096672 /* BinarySearchTree.m */,
+				93BF2A962405667000096672 /* TreeNode.m */,
+				93BF2A972405667000096672 /* AVLTree.m */,
+				93BF2A982405667000096672 /* AVLNode.m */,
+				93BF2A992405667000096672 /* BST.h */,
+				93BF2A9A2405667000096672 /* BBST.h */,
+				93BF2A9B2405667000096672 /* RBTree.h */,
+				93BF2A9C2405667000096672 /* RBNode.h */,
+				93BF2A9D2405667000096672 /* TreeNode.h */,
+				93BF2A9E2405667000096672 /* BinarySearchTree.h */,
+				93BF2A9F2405667000096672 /* AVLNode.h */,
+				93BF2AA02405667000096672 /* AVLTree.h */,
 			);
-			name = Tree;
-			path = ../../11_AVLTree/09_Tree/Tree;
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,22 +222,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9351F46C23CA0649009239C5 /* AVLNode.m in Sources */,
-				9351F45923CA0640009239C5 /* Queue.m in Sources */,
-				9351F45B23CA0640009239C5 /* LinkNode.m in Sources */,
-				9351F45C23CA0640009239C5 /* LinkedList.m in Sources */,
-				9351F46B23CA0649009239C5 /* AVLTree.m in Sources */,
-				9351F47223CE0B4A009239C5 /* RBTree.m in Sources */,
+				93BF2AA32405667000096672 /* BBST.m in Sources */,
+				93BF2A8C2405666500096672 /* Queue.m in Sources */,
+				93BF2A8E2405666500096672 /* LinkNode.m in Sources */,
+				93BF2AA72405667000096672 /* AVLTree.m in Sources */,
+				93BF2A8F2405666500096672 /* LinkedList.m in Sources */,
 				9351F43C23CA061E009239C5 /* ViewController.m in Sources */,
-				9351F45823CA0640009239C5 /* List.m in Sources */,
-				9351F46A23CA0649009239C5 /* TreeNode.m in Sources */,
+				93BF2A8B2405666500096672 /* List.m in Sources */,
+				93BF2AA22405667000096672 /* RBTree.m in Sources */,
+				93BF2AA62405667000096672 /* TreeNode.m in Sources */,
 				9351F44723CA061F009239C5 /* main.m in Sources */,
-				9351F46823CA0649009239C5 /* BST.m in Sources */,
 				9351F43923CA061E009239C5 /* AppDelegate.m in Sources */,
-				9351F46923CA0649009239C5 /* BinarySearchTree.m in Sources */,
-				9351F47523CE10A6009239C5 /* RBNode.m in Sources */,
-				9351F46F23CA0717009239C5 /* BBST.m in Sources */,
-				9351F45A23CA0640009239C5 /* AbstractList.m in Sources */,
+				93BF2AA42405667000096672 /* BST.m in Sources */,
+				93BF2AA12405667000096672 /* RBNode.m in Sources */,
+				93BF2AA82405667000096672 /* AVLNode.m in Sources */,
+				93BF2AA52405667000096672 /* BinarySearchTree.m in Sources */,
+				93BF2A8D2405666500096672 /* AbstractList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

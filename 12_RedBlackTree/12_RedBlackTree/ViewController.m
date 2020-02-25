@@ -27,7 +27,7 @@
     
 //    [self test3];
     
-    [self test4];
+//    [self test4];
 }
 
 - (void)test1 {
