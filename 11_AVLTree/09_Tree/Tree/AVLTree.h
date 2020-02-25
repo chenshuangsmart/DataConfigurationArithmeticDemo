@@ -7,13 +7,14 @@
 //
 
 #import "BST.h"
+#import "BBST.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  AVL树
  */
-@interface AVLTree : BST
+@interface AVLTree : BBST
 
 @end
 

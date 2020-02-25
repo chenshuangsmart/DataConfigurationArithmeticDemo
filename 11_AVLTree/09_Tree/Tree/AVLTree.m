@@ -1,4 +1,4 @@
-//
+ //
 //  AVLTree.m
 //  09_Tree
 //
@@ -71,44 +71,9 @@
     }
 }
 
-/** 左旋转 grand - 爷爷节点 */
-- (void)rotateLeft:(AVLNode *)grand {
-    TreeNode *parent = grand.right;
-    TreeNode *child = parent.left;
-    grand.right = child;
-    parent.left = grand;
-    [self afterRotate:grand parent:parent child:child];
-}
-
-/** 右旋转 */
-- (void)rotateRight:(AVLNode *)grand {
-    TreeNode *parent = grand.left;
-    TreeNode *child = parent.right;
-    grand.left = child;
-    parent.right = grand;
-    [self afterRotate:grand parent:parent child:child];
-}
-
 /** 更新节点*/
 - (void)afterRotate:(TreeNode *)grand parent:(TreeNode *)parent child:(TreeNode *)child {
-    // 让parent成为子树的根节点
-    parent.parent = grand.parent;
-
-    if (parent.isLeftChild) {
-        grand.parent.left = parent;
-    } else if (grand) {
-        grand.parent.right = parent;
-    } else {    // grand 是 root节点
-        self.root = parent;
-    }
-    
-    // 更新child的parent
-    if (child != nil) {
-        child.parent = grand;
-    }
-    
-    // 更新grand的parent
-    grand.parent = parent;
+    [super afterRotate:grand parent:parent child:child];
     
     // 更新高度
     [self updateHeight:(AVLNode *)grand];
@@ -145,47 +110,13 @@
              a:(TreeNode *)a b:(TreeNode *)b c:(TreeNode *)c
              d:(TreeNode *)d
              e:(TreeNode *)e f:(TreeNode *)f g:(TreeNode *)g {
-    // 让 d 成为这棵子树的根节点
-    d.parent = r.parent;
+    [super rotate:r a:a b:b c:c d:d e:e f:f g:g];
     
-    if (r.isLeftChild) {
-        r.parent.left = d;
-    } else if (r.isRightChild) {
-        r.parent.right = d;
-    } else {
-        self.root = d;
-    }
-    
-    // a-b-c
-    b.left = a;
-    if (a != nil) {
-        a.parent = b;
-    }
-    b.right = c;
-    if (c != nil) {
-        c.parent = b;
-    }
-    [self updateHeight:b];
-    
-    // e-f-g
-    f.left = e;
-    if (e != nil) {
-        e.parent = f;
-    }
-    f.right = g;
-    if (g != nil) {
-        g.parent = f;
-    }
-    [self updateHeight:f];
-    
-    // b-d-f
-    d.left = b;
-    d.right = f;
-    b.parent = d;
-    f.parent = d;
-    [self updateHeight:d];
+    // 更新高度
+    [self updateHeight:(AVLNode *)b];
+    [self updateHeight:(AVLNode *)f];
+    [self updateHeight:(AVLNode *)d];
 }
-
 #pragma mark - private
 
 /** 是否是平衡树 */

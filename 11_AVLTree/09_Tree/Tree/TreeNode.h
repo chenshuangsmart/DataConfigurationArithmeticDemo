@@ -37,6 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** 是否有右子树节点 */
 - (BOOL)isRightChild;
 
+/// 返回叔父节点
+- (TreeNode *)sibling;
 
 @end
 

@@ -40,6 +40,17 @@
     return self.parent != nil && self == self.parent.right;
 }
 
+/// 返回叔父节点
+- (TreeNode *)sibling {
+    if ([self isLeftChild]) {
+        return self.parent.right;
+    }
+    if ([self isRightChild]) {
+        return self.parent.left;
+    }
+    return nil;
+}
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"%@",self.element];
 }
