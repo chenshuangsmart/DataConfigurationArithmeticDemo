@@ -21,9 +21,9 @@
     
 //    [self listSetTest];
     
-//    [self treeSetTest];
+    [self treeSetTest];
     
-    [self getFileInfo];
+//    [self getFileInfo];
 }
 
 - (void)listSetTest {

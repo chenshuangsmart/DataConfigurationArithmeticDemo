@@ -76,7 +76,7 @@
     } else {
         LinkNode *node = _first;
         for (NSUInteger i = 0; i < self.size; i++) {
-            if ([node.element isKindOfClass:[NSString class]] && node.element == element) {
+            if (node.element == element) {
                 return i;
             }
             node = node.next;
