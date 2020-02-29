@@ -1,0 +1,190 @@
+//
+//  RBTree.m
+//  12_RedBlackTree
+//
+//  Created by chenshuang on 2020/1/14.
+//  Copyright © 2020年 wenwen. All rights reserved.
+//
+
+#import "RBTree.h"
+#import "RBNode.h"
+#import "TreeNode.h"
+
+@interface RBTree()
+
+@end
+
+@implementation RBTree
+
+#pragma mark - override
+
+- (TreeNode *)createNode:(id)element parent:(RBNode *)parent {
+    return [[RBNode alloc] initWithElement:element parent:parent];
+}
+
+- (void)afterAdd:(TreeNode *)node {
+    TreeNode *parent = node.parent;
+    
+    // 添加的是根节点,或者上溢到达了根节点
+    if (parent == nil) {
+        [self black:node];
+        return;
+    }
+    
+    // 如果父节点是黑色,直接返回
+    if ([self isBlack:parent]) {
+        return;
+    }
+    
+    // 叔父节点
+    TreeNode *uncle = parent.sibling;
+    // 祖父节点
+    TreeNode *grand = [self red:parent.parent];
+    if ([self isRed:uncle]) {   // 叔父节点是红色[B树节点上溢]
+        [self black:parent];
+        [self black:uncle];
+        
+        // 将祖父节点当做是新添加的节点
+        [self afterAdd:grand];
+        return;
+    }
+    
+    // 叔父节点不是红色
+    if (parent.isLeftChild) {   // L
+        if (node.isLeftChild) { // LL
+            [self black:parent];
+        } else {    // LR
+            [self black:node];
+            [self rotateLeft:parent];
+        }
+    } else {    // R
+        if (node.isLeftChild) { // RL
+            [self black:node];
+            [self rotateRight:parent];
+        } else {    // RR
+            [self black:parent];
+        }
+        [self rotateLeft:grand];
+    }
+}
+
+- (void)afterRemove:(TreeNode *)node {
+    // 如果删除的节点是红色
+    // 或者用以取代删除节点的子节点是红色
+    if ([self isRed:node]) {
+        [self black:node];
+        return;
+    }
+    
+    TreeNode *parent = node.parent;
+    // 删除的是根节点
+    if (parent == nil) {
+        return;
+    }
+    
+    // 删除的是黑色叶子节点[下溢]
+    // 判断被删除的node是左还是右
+    BOOL left = parent.left == nil || node.isLeftChild;
+    TreeNode *sibling = left ? parent.right : parent.left;
+    
+    if (left) { // 被删除的节点在左边,兄弟节点在右边
+        if ([self isRed:sibling]) { // 兄弟节点是红色
+            [self black:sibling];
+            [self red:parent];
+            [self rotateLeft:parent];
+            
+            // 更换兄弟
+            sibling = parent.right;
+        }
+        
+        // 兄弟节点必然是黑色
+        if ([self isBlack:sibling.left] && [self isBlack:sibling.right]) {
+            // 兄弟节点没有一个红色节点,父节点要向下跟兄弟节点合并
+            BOOL parentBlack = [self isBlack:parent];
+            [self black:parent];
+            [self red:sibling];
+            
+            if (parentBlack) {
+                [self afterRemove:parent];
+            }
+        } else {    // 兄弟节点至少有一个红色节点,向兄弟节点借元素
+            // 兄弟节点的左边时黑色,兄弟要先旋转
+            if ([self isBlack:sibling.right]) {
+                [self rotateRight:sibling];
+                sibling = parent.right;
+            }
+            
+            [self color:sibling color:[self colorOf:parent]];
+            [self black:sibling.right];
+            [self black:parent];
+            [self rotateLeft:parent];
+        }
+    } else {    // 被删除的节点在右边,兄弟节点在左边
+        if ([self isRed:sibling]) { // 兄弟节点是红色
+            [self black:sibling];
+            [self red:parent];
+            [self rotateRight:parent];
+            
+            // 更换兄弟
+            sibling = parent.left;
+        }
+        
+        // 兄弟节点必然是黑色
+        if ([self isBlack:sibling.left] && [self isBlack:sibling.right]) {
+            // 兄弟节点没有一个红色节点,父节点要向下跟兄弟节点合并
+            BOOL parentBlack = [self isBlack:parent];
+            [self black:parent];
+            [self red:sibling];
+            
+            if (parentBlack) {
+                [self afterRemove:parent];
+            }
+        } else {    // 兄弟节点至少有一个红色子节点,向兄弟节点借元素
+            // 兄弟节点的左边时黑色,兄弟要先旋转
+            if ([self isBlack:sibling.left]) {
+                [self rotateLeft:sibling];
+                sibling = parent.left;
+            }
+            
+            [self color:sibling color:[self colorOf:parent]];
+            [self black:sibling.left];
+            [self black:parent];
+            [self rotateRight:parent];
+        }
+    }
+}
+
+#pragma mark - private
+
+- (TreeNode *)color:(TreeNode *)node color:(RBTreeNodeType)color {
+    if (!node) {
+        return node;
+    }
+    ((RBNode *)node).color = color;
+    return node;
+}
+
+- (TreeNode *)red:(TreeNode *)node {
+    return [self color:node color:Red];
+}
+
+- (TreeNode *)black:(TreeNode *)node {
+    return [self color:node color:Black];
+}
+
+/// 返回色值
+- (RBTreeNodeType)colorOf:(TreeNode *)node {
+    return node == nil ? Black : ((RBNode *)node).color;
+}
+
+/// 是否是黑色
+- (BOOL)isBlack:(TreeNode *)node {
+    return [self colorOf:node] == Black;
+}
+
+/// 是否是红色
+- (BOOL)isRed:(TreeNode *)node {
+    return [self colorOf:node] == Red;
+}
+
+@end
