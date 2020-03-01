@@ -57,6 +57,7 @@
             [self black:node];
             [self rotateLeft:parent];
         }
+        [self rotateRight:grand];
     } else {    // R
         if (node.isLeftChild) { // RL
             [self black:node];
