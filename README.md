@@ -51,4 +51,6 @@
 
 [《恋上数据结构与算法一》笔记（十九）Trie](https://www.jianshu.com/p/37a783ab1d32)
 
+[《恋上数据结构与算法一》笔记（二十）总结](https://www.jianshu.com/p/24227c9f71e5)
+
 
