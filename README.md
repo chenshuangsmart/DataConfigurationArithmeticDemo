@@ -46,3 +46,6 @@
 [《恋上数据结构与算法一》笔记（十五）哈希表](https://www.jianshu.com/p/c137dad93d8d)
 
 [《恋上数据结构与算法一》笔记（十六）堆](https://www.jianshu.com/p/d62ec033370b)
+
+[《恋上数据结构与算法一》笔记（十七）优先级队列](https://www.jianshu.com/p/c3600db997ed)
+
