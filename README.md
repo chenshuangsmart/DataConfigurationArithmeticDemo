@@ -49,3 +49,6 @@
 
 [《恋上数据结构与算法一》笔记（十七）优先级队列](https://www.jianshu.com/p/c3600db997ed)
 
+[《恋上数据结构与算法一》笔记（十久）Trie](https://www.jianshu.com/p/37a783ab1d32)
+
+
